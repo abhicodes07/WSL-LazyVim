@@ -30,7 +30,7 @@ keymap.set("n", "<leader>tn", ":tabnext<Return>", opts)
 keymap.set("n", "<leader>tp", ":tabprev<Return>", opts)
 
 -- split window
-keymap.set("n", "<leader>sh", ":split<Return>", opts)
+keymap.set("n", "<leader>sz", ":split<Return>", opts)
 keymap.set("n", "<leader>sv", ":vsplit<Return>", opts)
 keymap.set("n", "<leader>sx", "<cmd>close<CR>", { desc = "Close current split" })
 
