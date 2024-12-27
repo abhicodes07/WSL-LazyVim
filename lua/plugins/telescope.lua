@@ -5,6 +5,23 @@ return {
   },
   keys = {
     {
+      "<leader>se", -- Spell Suggest
+      function()
+        local opts = {
+          theme = "cursor",
+          layout_config = {
+            width = 50,
+            height = 9,
+            mode = "normal",
+          },
+        }
+        local builtin = require("telescope.builtin")
+        local themes = require("telescope.themes")
+        builtin.spell_suggest(themes.get_cursor(opts))
+      end,
+      desc = "Spell Suggest",
+    },
+    {
       "<leader>fB",
       function()
         require("telescope.builtin").find_files({
