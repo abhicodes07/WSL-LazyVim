@@ -16,7 +16,8 @@ return {
   {
     "rcarriga/nvim-notify",
     opts = {
-      timeout = 7000,
+      stages = "fade_in_slide_out",
+      timeout = 5000,
     },
   },
 
@@ -44,6 +45,14 @@ return {
       options = {
         theme = "nightfly",
       },
+    },
+  },
+
+  -- which key
+  {
+    "folke/which-key.nvim",
+    opts = {
+      preset = "helix", -- Values : helix, classic, modern
     },
   },
 }
