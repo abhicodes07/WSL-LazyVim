@@ -43,7 +43,7 @@ return {
     event = "VeryLazy",
     opts = {
       options = {
-        theme = "nightfly",
+        theme = "horizon",
       },
     },
   },
