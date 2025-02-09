@@ -21,7 +21,12 @@ require("lazy").setup({
       "LazyVim/LazyVim",
       import = "lazyvim.plugins",
       opts = {
-        colorscheme = "solarized-osaka", -- catppuccin-mocha, catppuccin-frappe, solarized-osaka, onedark
+        -- catppuccin-mocha,
+        -- catppuccin-frappe,
+        -- solarized-osaka,
+        -- onedark
+        -- oxocarbon
+        colorscheme = "solarized-osaka",
       },
     },
     { import = "lazyvim.plugins.extras.lang.typescript" },
