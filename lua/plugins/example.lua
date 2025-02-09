@@ -137,6 +137,7 @@ return {
         "yaml",
         "css",
         "c++",
+        "java",
       },
     },
   },
@@ -151,6 +152,8 @@ return {
       vim.list_extend(opts.ensure_installed, {
         "tsx",
         "typescript",
+        "java",
+        "python",
       })
     end,
   },
