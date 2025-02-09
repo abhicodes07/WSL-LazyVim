@@ -35,10 +35,10 @@ keymap.set("n", "<leader>sv", ":vsplit<Return>", opts)
 keymap.set("n", "<leader>sx", "<cmd>close<CR>", { desc = "Close current split" })
 
 --Move window
-keymap.set("n", "sh", "<C-w>h")
-keymap.set("n", "sk", "<C-w>k")
-keymap.set("n", "sj", "<C-w>j")
-keymap.set("n", "sl", "<C-w>l")
+keymap.set("n", "sh", "<C-w>h", { desc = "move window left" })
+keymap.set("n", "sk", "<C-w>k", { desc = "move window up" })
+keymap.set("n", "sj", "<C-w>j", { desc = "move window down" })
+keymap.set("n", "sl", "<C-w>l", { desc = "move window right" })
 
 -- resize window
 keymap.set("n", "<C-w><left>", "<C-w><")
@@ -48,5 +48,5 @@ keymap.set("n", "<C-w><down>", "<C-w>-")
 
 -- diagnostics
 keymap.set("n", "<C-j>", function()
-  vim.diagnostics.goto_next()
+  vim.diagnostic.goto_next()
 end, opts)
