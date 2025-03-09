@@ -87,44 +87,4 @@ return {
       })
     end,
   },
-
-  -- lspkind : lsp icons
-  {
-    "onsails/lspkind.nvim",
-    event = "VeryLazy",
-    dependencies = { "hrsh7th/nvim-cmp" }, -- Ensure it's loaded after cmp
-    opts = function()
-      return {
-        mode = "symbol_text", -- Show both icons & text
-        preset = "codicons", -- Use VSCode icons
-        symbol_map = {
-          Text = "",
-          Method = "",
-          Function = "󰡱",
-          Constructor = "",
-          Field = "",
-          Variable = "",
-          Class = "",
-          Interface = "",
-          Module = "",
-          Property = "",
-          Unit = "",
-          Value = "",
-          Enum = "",
-          Keyword = "",
-          Snippet = "",
-          Color = "",
-          File = "",
-          Reference = "",
-          Folder = "",
-          EnumMember = "",
-          Constant = "",
-          Struct = "",
-          Event = "",
-          Operator = "",
-          TypeParameter = "",
-        },
-      }
-    end,
-  },
 }
