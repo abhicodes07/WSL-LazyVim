@@ -29,7 +29,8 @@ require("lazy").setup({
         -- tokyonight
         -- tokyonight-storm
         -- tokyonight-night
-        colorscheme = "oxocarbon",
+        -- tokyodark
+        colorscheme = "tokyodark",
       },
     },
     { import = "lazyvim.plugins.extras.lang.typescript" },

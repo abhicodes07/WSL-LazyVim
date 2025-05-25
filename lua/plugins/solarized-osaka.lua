@@ -3,7 +3,7 @@ return {
   lazy = true,
   priority = 1000,
   opts = {
-    transparent = false,
+    transparent = true,
   },
 
   terminal_colors = true, -- Configure the colors used when opening a `:terminal` in [Neovim](https://github.com/neovim/neovim)
