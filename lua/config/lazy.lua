@@ -30,7 +30,7 @@ require("lazy").setup({
         -- tokyonight-storm
         -- tokyonight-night
         -- tokyodark
-        colorscheme = "tokyodark",
+        colorscheme = "material-deep-ocean",
       },
     },
     { import = "lazyvim.plugins.extras.lang.typescript" },
@@ -43,6 +43,7 @@ require("lazy").setup({
 
     -- import/override with your plugins
     { import = "plugins" },
+    { import = "plugins/themes" },
   },
   defaults = {
     -- By default, only LazyVim plugins will be lazy-loaded. Your custom plugins will load during startup.

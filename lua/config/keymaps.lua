@@ -8,8 +8,12 @@ local opts = { noremap = true, silent = true }
 -- exit insert mode
 keymap.set("i", "jk", "<ESC>", { desc = "Exit insert mode jk" })
 
--- clear search history
-keymap.set("n", "<leader>nh", ":nohl<CR>", { desc = "Clear search highlightts" })
+-- clear search highlights
+keymap.set("n", "<leader>xh", ":nohl<CR>", { desc = "Clear search highlights" })
+
+-- noice
+keymap.set("n", "<leader>nh", "<cmd>Noice snacks<CR>", { desc = "Noice history" })
+keymap.set("n", "<leader>nl", "<cmd>Noice snacks<CR>", { desc = "Last message" })
 
 -- Increment/Decrement
 keymap.set("n", "+", "<C-a>")
@@ -45,6 +49,10 @@ keymap.set("n", "<C-w><left>", "<C-w><")
 keymap.set("n", "<C-w><right>", "<C-w>>")
 keymap.set("n", "<C-w><up>", "<C-w>+")
 keymap.set("n", "<C-w><down>", "<C-w>-")
+
+-- huefy
+keymap.set("n", "<leader>hh", "<cmd>Huefy<CR>", { desc = "Pick color" })
+keymap.set("n", "<leader>hs", "<cmd>Shades<CR>", { desc = "Pick Shades" })
 
 -- diagnostics
 keymap.set("n", "<C-j>", function()

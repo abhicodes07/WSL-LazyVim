@@ -43,7 +43,7 @@ return {
     event = "VeryLazy",
     opts = {
       options = {
-        theme = "horizon",
+        theme = "material",
       },
     },
   },
@@ -53,6 +53,24 @@ return {
     "folke/which-key.nvim",
     opts = {
       preset = "helix", -- Values : helix, classic, modern
+    },
+  },
+
+  -- nvim-web-devicons
+  { "nvim-tree/nvim-web-devicons", opts = {} },
+
+  -- mason
+  {
+    "mason-org/mason.nvim",
+    opts = {
+      ui = {
+        border = "rounded",
+        icons = {
+          package_pending = " ",
+          package_installed = " ",
+          package_uninstalled = "󰚌",
+        },
+      },
     },
   },
 
@@ -71,7 +89,7 @@ return {
             InclineNormalNC = { guifg = colors.violet500, guibg = colors.base03 },
           },
         },
-        window = { margin = { vertical = 0, horizontal = 1 } },
+        window = { margin = { vertical = 1, horizontal = 1 } },
         hide = {
           cursorline = true,
         },

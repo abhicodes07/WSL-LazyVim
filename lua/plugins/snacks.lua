@@ -7,18 +7,41 @@ return {
     -- or leave it empty to use the default settings
     -- refer to the configuration section below
     bigfile = { enabled = true },
+
+    -- notifier
     notifier = {
       enabled = false,
-      timeout = 3000,
+      timeout = 5000,
+      padding = true,
+      style = "fancy",
+      -- Notification history style
+      history = {
+        -- filter = "info", -- only show notifications of 'info' level and higher
+        sort = { "added" }, -- sort by time added
+        reverse = true, -- newest notifications at the top
+      },
+      styles = {
+        notification_history = {
+          border = "rounded",
+          zindex = 100,
+          width = 0.6,
+          height = 0.6,
+          minimal = false,
+          title = " Notification History ",
+          title_pos = "center",
+          ft = "markdown",
+          bo = { filetype = "snacks_notif_history", modifiable = false },
+          wo = { winhighlight = "Normal:SnacksNotifierHistory" },
+          keys = { q = "close" },
+        },
+      },
     },
+
     quickfile = { enabled = true },
     statuscolumn = { enabled = true },
     words = { enabled = true },
-    styles = {
-      notification = {
-        wo = { wrap = true }, -- Wrap notifications
-      },
-    },
+
+    -- dashboard
     dashboard = {
       preset = {
         header = [[
@@ -117,13 +140,6 @@ return {
   -- KEYMAPS
   keys = {
     {
-      "<leader>n",
-      function()
-        Snacks.notifier.show_history()
-      end,
-      desc = "Notification History",
-    },
-    {
       "<leader>N",
       desc = "Neovim News",
       function()
@@ -131,7 +147,7 @@ return {
           file = vim.api.nvim_get_runtime_file("doc/news.txt", false)[1],
           width = 0.6,
           height = 0.6,
-          title = "NEOVIM NEWS",
+          title = " NEOVIM NEWS",
           title_pos = "center",
           border = "rounded",
           wo = {
