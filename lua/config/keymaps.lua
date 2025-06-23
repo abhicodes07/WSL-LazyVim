@@ -9,11 +9,7 @@ local opts = { noremap = true, silent = true }
 keymap.set("i", "jk", "<ESC>", { desc = "Exit insert mode jk" })
 
 -- clear search highlights
-keymap.set("n", "<leader>xh", ":nohl<CR>", { desc = "Clear search highlights" })
-
--- noice
-keymap.set("n", "<leader>nh", "<cmd>Noice snacks<CR>", { desc = "Noice history" })
-keymap.set("n", "<leader>nl", "<cmd>Noice snacks<CR>", { desc = "Last message" })
+keymap.set("n", "<leader>nh", ":nohl<CR>", { desc = "Clear search highlights" })
 
 -- Increment/Decrement
 keymap.set("n", "+", "<C-a>")

@@ -20,7 +20,6 @@ return {
     },
     -- select nth item from the list
     keymap = {
-      preset = "default",
       ["<A-1>"] = {
         function(cmp)
           cmp.accept({ index = 1 })
@@ -101,7 +100,7 @@ return {
           columns = {
             { "item_idx" },
             { "kind_icon", "label", "label_description", gap = 1 },
-            { "kind", "source_name" },
+            { "kind" },
           },
         },
       },

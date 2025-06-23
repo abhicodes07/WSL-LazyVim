@@ -12,6 +12,15 @@ return {
 
       opts.presets.lsp_doc_border = true
     end,
+    keys = {
+      {
+        "<leader>snl",
+        function()
+          require("noice").cmd("snacks")
+        end,
+        desc = "Noice Last Message",
+      },
+    },
   },
   {
     "rcarriga/nvim-notify",
@@ -55,9 +64,6 @@ return {
       preset = "helix", -- Values : helix, classic, modern
     },
   },
-
-  -- nvim-web-devicons
-  { "nvim-tree/nvim-web-devicons", opts = {} },
 
   -- mason
   {
