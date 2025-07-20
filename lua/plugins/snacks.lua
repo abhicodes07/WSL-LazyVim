@@ -101,7 +101,7 @@ return {
         {
           pane = 2,
           section = "terminal",
-          cmd = "colorscript panes",
+          cmd = "colorscript crunchbang-mini",
           height = 6, -- By default 5
           padding = 4, -- By default 1
           align = "center",
@@ -109,20 +109,20 @@ return {
         { section = "keys", pane = 2, gap = 1, padding = 1 }, -- Removes those options from the dashboard
         { pane = 2, icon = " ", title = "Recent Files", section = "recent_files", indent = 2, padding = 1 },
         { pane = 2, icon = " ", title = "Projects", section = "projects", indent = 2, padding = 1 },
-        {
-          pane = 2,
-          icon = " ",
-          title = "Git Status",
-          section = "terminal",
-          enabled = function()
-            return Snacks.git.get_root() ~= nil
-          end,
-          cmd = "git status --short --branch --renames",
-          height = 5,
-          padding = 1,
-          ttl = 5 * 60,
-          indent = 3,
-        },
+        -- {
+        --   pane = 2,
+        --   icon = " ",
+        --   title = "Git Status",
+        --   section = "terminal",
+        --   enabled = function()
+        --     return Snacks.git.get_root() ~= nil
+        --   end,
+        --   cmd = "git status --short --branch --renames",
+        --   height = 5,
+        --   padding = 1,
+        --   ttl = 5 * 60,
+        --   indent = 3,
+        -- },
         -- {
         --   pane = 3,
         --   section = "terminal",
