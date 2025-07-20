@@ -30,6 +30,7 @@ require("lazy").setup({
         -- tokyonight-storm
         -- tokyonight-night
         -- tokyodark
+        -- material-deep-ocean
         colorscheme = "material-deep-ocean",
       },
     },

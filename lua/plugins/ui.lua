@@ -52,6 +52,7 @@ return {
     event = "VeryLazy",
     opts = {
       options = {
+        -- material
         theme = "material",
       },
     },
