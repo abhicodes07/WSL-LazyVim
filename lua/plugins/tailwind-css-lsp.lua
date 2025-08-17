@@ -3,10 +3,27 @@ return {
   opts = {
     servers = {
       tailwindcss = {
+        root_dir = function(...)
+          return require("lspconfig.util").root_pattern(".git")(...)
+        end,
         -- exclude a filetype from the default_config
         filetypes_exclude = { "markdown" },
         -- add additional filetypes to the default_config
-        filetypes_include = { "htmldjango" },
+        filetypes_include = {
+          "html",
+          "htmldjango",
+          "css",
+          "scss",
+          "javascript",
+          "javascriptreact",
+          "typescript",
+          "typescriptreact",
+          "svelte",
+          "vue",
+          "php",
+          "astro",
+          "templ",
+        },
         -- to fully override the default_config, change the below
         -- filetypes = {}
       },

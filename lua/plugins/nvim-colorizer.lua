@@ -25,7 +25,7 @@ return {
         update_names = true,
       },
       sass = { enable = true, parsers = { "css" } }, -- Enable Sass colors
-      virtualtext = "■",
+      virtualtext = "",
     },
   },
   config = function(_, opts)
