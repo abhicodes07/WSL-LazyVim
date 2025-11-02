@@ -13,12 +13,15 @@ return {
       background = false, -- Prevent the theme from setting the background (NeoVim then uses your terminal background)
       eob_lines = false, -- Hide the end-of-buffer lines
     },
+    plugins = {
+      "blink",
+    },
     style = {
       comments = { [[ italic = true ]] },
     },
     high_visibility = {
       darker = true,
     },
-    lualine_style = "default",
+    lualine_style = "stealth",
   },
 }
