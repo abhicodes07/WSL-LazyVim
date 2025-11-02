@@ -15,6 +15,7 @@ return {
     },
     plugins = {
       "blink",
+      "flash",
     },
     style = {
       comments = { [[ italic = true ]] },
