@@ -31,7 +31,6 @@ require("lazy").setup({
         -- tokyonight-night
         -- tokyodark
         -- material-deep-ocean
-        -- onedarkpro
         -- nord
         colorscheme = "material-deep-ocean",
       },
