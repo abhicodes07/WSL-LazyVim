@@ -15,7 +15,7 @@ return {
       dim_inactive = {
         enabled = false, -- dims the background color of inactive window
         shade = "dark",
-        percentage = 0.35, -- percentage of the shade to apply to the inactive window
+        percentage = 0.15, -- percentage of the shade to apply to the inactive window
       },
 
       no_italic = false, -- Force no italic
@@ -23,10 +23,10 @@ return {
       no_underline = false, -- Force no underline
       styles = { -- Handles the styles of general hi groups (see `:h highlight-args`):
         comments = { "italic" }, -- Change the style of comments
-        conditionals = { "bold" },
-        loops = { "bold" },
-        functions = { "underline" },
-        keywords = { "bold", "italic" },
+        conditionals = { "italic" },
+        loops = {},
+        functions = { "bold", "italic" },
+        keywords = { "bold" },
         strings = {},
         variables = {},
         numbers = {},

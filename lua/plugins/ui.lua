@@ -53,7 +53,7 @@ return {
     opts = {
       options = {
         -- material
-        theme = "material",
+        theme = "catppuccin",
       },
     },
   },
